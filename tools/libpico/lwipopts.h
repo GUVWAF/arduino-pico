@@ -43,11 +43,11 @@ extern unsigned long __lwip_rand(void);
 #define LWIP_NETIF_HOSTNAME           1
 #define LWIP_NUM_NETIF_CLIENT_DATA    5
 #define LWIP_NETCONN                  0
-#define LWIP_STATS                    0
+#define LWIP_STATS                    1
 #define LWIP_STATS_DISPLAY            0
 #define MEM_STATS                     0
 #define SYS_STATS                     0
-#define MEMP_STATS                    0
+#define MEMP_STATS                    1
 #define LINK_STATS                    0
 #define LWIP_CHKSUM_ALGORITHM         0
 #define LWIP_DHCP                     1
@@ -63,6 +63,7 @@ extern unsigned long __lwip_rand(void);
 #define LWIP_IGMP                     1
 #define LWIP_MDNS_RESPONDER           1
 #define MDNS_MAX_SERVICES             4
+#define LWIP_DEBUG_TIMERNAMES         1
 
 // See #1285
 #define MEMP_NUM_UDP_PCB              (__LWIP_MEMMULT * 7)
@@ -80,7 +81,7 @@ extern void __setSystemTime(unsigned long long sec, unsigned long us);
 //#define SNTP_SERVER_ADDRESS               "pool.ntp.org"
 #define SNTP_SERVER_DNS                   1
 
-#define LWIP_DEBUG                  0
+#define LWIP_DEBUG                  1
 #define ETHARP_DEBUG                LWIP_DBG_OFF
 #define NETIF_DEBUG                 LWIP_DBG_OFF
 #define PBUF_DEBUG                  LWIP_DBG_OFF
@@ -93,7 +94,7 @@ extern void __setSystemTime(unsigned long long sec, unsigned long us);
 #define IP_REASS_DEBUG              LWIP_DBG_OFF
 #define RAW_DEBUG                   LWIP_DBG_OFF
 #define MEM_DEBUG                   LWIP_DBG_OFF
-#define MEMP_DEBUG                  LWIP_DBG_OFF
+#define MEMP_DEBUG                  LWIP_DBG_ON
 #define SYS_DEBUG                   LWIP_DBG_OFF
 #define TCP_DEBUG                   LWIP_DBG_OFF
 #define TCP_INPUT_DEBUG             LWIP_DBG_OFF
@@ -104,6 +105,7 @@ extern void __setSystemTime(unsigned long long sec, unsigned long us);
 #define TCP_FR_DEBUG                LWIP_DBG_OFF
 #define TCP_QLEN_DEBUG              LWIP_DBG_OFF
 #define TCP_RST_DEBUG               LWIP_DBG_OFF
+#define TIMERS_DEBUG                LWIP_DBG_ON
 #define UDP_DEBUG                   LWIP_DBG_OFF
 #define TCPIP_DEBUG                 LWIP_DBG_OFF
 #define PPP_DEBUG                   LWIP_DBG_OFF
