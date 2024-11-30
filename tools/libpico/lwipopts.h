@@ -44,7 +44,7 @@ extern unsigned long __lwip_rand(void);
 #define LWIP_NUM_NETIF_CLIENT_DATA    5
 #define LWIP_NETCONN                  0
 #define LWIP_STATS                    1
-#define LWIP_STATS_DISPLAY            0
+#define LWIP_STATS_DISPLAY            1
 #define MEM_STATS                     0
 #define SYS_STATS                     0
 #define MEMP_STATS                    1
@@ -54,7 +54,7 @@ extern unsigned long __lwip_rand(void);
 #define LWIP_IPV4                     1
 #define LWIP_TCP                      1
 #define LWIP_UDP                      1
-#define LWIP_DNS                      1
+#define LWIP_DNS                      2
 #define LWIP_DNS_SUPPORT_MDNS_QUERIES 1
 #define LWIP_TCP_KEEPALIVE            1
 #define LWIP_NETIF_TX_SINGLE_PBUF     1
